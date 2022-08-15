@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+*{
+    box-sizing: border-box; 
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(60, 59, 59);
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb{
+    background: white; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: grey; 
+}
+
+body{
+    margin: 0; 
+    background: #222;
+    font-family: Poppins;
+    font-weight: 400; 
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container img{
+    width: 130px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #55d6aa; 
+}
+
+header::after{
+    content: '';
+    display: table; 
+    clear: both; 
+}
+
+.logo{
+    height: 100px;
+    width: 80px;
+    float: left; 
+    padding: 10px 0; 
+    margin-left: -100px;
+}
+
+nav{
+    float: right;
+    margin-right: -100px;
+}
+
+nav ul{
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 40px;
+    position: relative; 
+}
+
+nav a{
+    color: #444;
+    text-decoration: none; 
+    text-transform: uppercase; 
+}
+
+nav a:hover{
+    color: black; 
+}
+
+nav a:before{
+    content: '';
+    display: block; 
+    height: 5px; 
+    width: 100%; 
+    background-color: #444; 
+
+    position: absolute; 
+    top: 0; 
+    width: 0%;
+
+    transition: 0.3s;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+#p1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 12%;
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 15%;
+}
+
+#section1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+
+#blogs{
+    font-size: 60px;
+}
